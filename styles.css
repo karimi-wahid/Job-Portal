@@ -333,6 +333,61 @@ header{
     font-size:1.1rem ;
 }
 
+/* Browse Jobs */
+
+.jobs form{
+    width: 100%;
+    border: 1px solid #1f4a40;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.jobs form i {
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.jobs form input{
+    width:100% ;
+    border: none;
+    outline: none;
+    padding: 1rem 0.7rem;
+    font-size: 1.1rem;
+}
+
+/* Jobs Detail Pages  */
+
+.jobHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fcfa;
+    border: 1px solid #51a995;
+    border-radius: 38px;
+    padding: 2rem;
+}
+
+.jobImageRow {
+    display: flex;
+    align-items: center;
+}
+
+.jobHeader img{
+    width: 100px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 14px;
+    margin-right: 2rem;
+}
+
+.jobDesc p{
+    padding-bottom: 2rem;
+}
+
 
 @media(max-width: 1200px){
     .obj-width{
@@ -485,6 +540,25 @@ header{
     .bottom div{
         width: 50%;
         margin-bottom: 50px;
+    }
+
+    /* Jobs Details */
+
+    .jobHeader {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        border-radius: 14px;
+        padding: 1rem;
+    }
+
+    .jobImageRow {
+        margin-bottom: 1.4rem;
+    }
+
+    .jobHeader img{
+        padding: 0rem;
+        border-radius: 10px;
     }
 
 }
